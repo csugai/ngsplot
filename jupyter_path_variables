@@ -1,0 +1,7 @@
+#add/clone ngsplot to ~/ directory
+#for jupyter notebook, import variable and add path
+import sys,os,os.path
+sys.path.append(os.path.expanduser('~/ngsplot/bin'))
+os.environ['NGSPLOT']=os.path.expanduser('~/ngsplot')
+
+%run ngsplotdb.py list
